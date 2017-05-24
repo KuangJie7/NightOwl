@@ -1,0 +1,106 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=gb2312" />
+<title>NightOwl</title>
+<script src="jquery-3.2.1.min.js"></script>
+<script src="jQuery_danru.js" type="text/javascript">
+</script> 	
+<style type="text/css">
+<!--
+.STYLE1 {color: white}
+.STYLE2 {
+	font-family: "Times New Roman", Times, serif;
+	font-size: 16px;
+	font-weight: bold;
+}
+a:link {
+color: #FFFFFF; /*连接默认的颜色变化*/
+text-decoration:none;
+}
+a:visited {
+color: #FFFFFF; /*连接访问的颜色变化*/
+}
+a:hover {
+color: #2fa8e1; /*鼠标经过的颜色变化*/
+}
+a:active {
+color: #2fa8e1; /*鼠标按下的颜色变化*/
+}
+
+-->
+</style>
+<script type="text/JavaScript">
+<!--
+function MM_preloadImages() { //v3.0
+  var d=document; if(d.images){ if(!d.MM_p) d.MM_p=new Array();
+    var i,j=d.MM_p.length,a=MM_preloadImages.arguments; for(i=0; i<a.length; i++)
+    if (a[i].indexOf("#")!=0){ d.MM_p[j]=new Image; d.MM_p[j++].src=a[i];}}
+}
+
+function MM_findObj(n, d) { //v4.01
+  var p,i,x;  if(!d) d=document; if((p=n.indexOf("?"))>0&&parent.frames.length) {
+    d=parent.frames[n.substring(p+1)].document; n=n.substring(0,p);}
+  if(!(x=d[n])&&d.all) x=d.all[n]; for (i=0;!x&&i<d.forms.length;i++) x=d.forms[i][n];
+  for(i=0;!x&&d.layers&&i<d.layers.length;i++) x=MM_findObj(n,d.layers[i].document);
+  if(!x && d.getElementById) x=d.getElementById(n); return x;
+}
+
+function MM_nbGroup(event, grpName) { //v6.0
+  var i,img,nbArr,args=MM_nbGroup.arguments;
+  if (event == "init" && args.length > 2) {
+    if ((img = MM_findObj(args[2])) != null && !img.MM_init) {
+      img.MM_init = true; img.MM_up = args[3]; img.MM_dn = img.src;
+      if ((nbArr = document[grpName]) == null) nbArr = document[grpName] = new Array();
+      nbArr[nbArr.length] = img;
+      for (i=4; i < args.length-1; i+=2) if ((img = MM_findObj(args[i])) != null) {
+        if (!img.MM_up) img.MM_up = img.src;
+        img.src = img.MM_dn = args[i+1];
+        nbArr[nbArr.length] = img;
+    } }
+  } else if (event == "over") {
+    document.MM_nbOver = nbArr = new Array();
+    for (i=1; i < args.length-1; i+=3) if ((img = MM_findObj(args[i])) != null) {
+      if (!img.MM_up) img.MM_up = img.src;
+      img.src = (img.MM_dn && args[i+2]) ? args[i+2] : ((args[i+1])? args[i+1] : img.MM_up);
+      nbArr[nbArr.length] = img;
+    }
+  } else if (event == "out" ) {
+    for (i=0; i < document.MM_nbOver.length; i++) {
+      img = document.MM_nbOver[i]; img.src = (img.MM_dn) ? img.MM_dn : img.MM_up; }
+  } else if (event == "down") {
+    nbArr = document[grpName];
+    if (nbArr)
+      for (i=0; i < nbArr.length; i++) { img=nbArr[i]; img.src = img.MM_up; img.MM_dn = 0; }
+    document[grpName] = nbArr = new Array();
+    for (i=2; i < args.length-1; i+=2) if ((img = MM_findObj(args[i])) != null) {
+      if (!img.MM_up) img.MM_up = img.src;
+      img.src = img.MM_dn = (args[i+1])? args[i+1] : img.MM_up;
+      nbArr[nbArr.length] = img;
+  } }
+}
+//-->
+</script>
+</head>
+
+<body style="background-color:#000000;display:none;" onload="MM_preloadImages('图片集/index图片/标题栏目/街头文化空3.jpg','图片集/index图片/标题栏目/城市摄影空3.jpg','图片集/index图片/标题栏目/极限运动a1.jpg','图片集/index图片/标题栏目/音乐街区a1.jpg','图片集/index图片/标题栏目/街头文化a2.jpg','图片集/index图片/标题栏目/城市摄影a1.jpg')">
+<table width="100%" height="30" border="0" align="right" cellpadding="0" cellspacing="0" bordercolor="#1B1B1B">
+  <tr>
+    <td width="30%"><div id="head"><a href="main.html" target="mainFrame"><img src="图片集/index图片/标题栏目/LOGO.png" width="30" height="36" />
+        <stan class="STYLE1 STYLE2">NightOwl</stan></a></div>
+    </a>
+    <stan class="STYLE1 STYLE2"></stan></td>
+    <td width="70%" align="center" valign="middle" bordercolor="#FF0000"><table border="0" cellpadding="0" cellspacing="0">
+      <tr>
+        <td><a href="极限运动.html" target="mainFrame" onclick="MM_nbGroup('down','group1','jixian','图片集/index图片/标题栏目/极限运动a1.jpg',1)" onmouseover="MM_nbGroup('over','jixian','图片集/index图片/标题栏目/极限运动a1.jpg','',1)" onmouseout="MM_nbGroup('out')"><img src="图片集/index图片/标题栏目/极限运动a.jpg" alt="" name="jixian" border="0" id="jixian" onload="" /></a></td>
+        <td>&nbsp;</td>
+        <td><a href="街头文化.html" target="mainFrame" onClick="MM_nbGroup('down','group1','jietou','图片集/index图片/标题栏目/街头文化a2.jpg',1)" onMouseOver="MM_nbGroup('over','jietou','图片集/index图片/标题栏目/街头文化a2.jpg','',1)" onMouseOut="MM_nbGroup('out')"><img name="jietou" src="图片集/index图片/标题栏目/街头文化a.jpg" border="0" alt="" onLoad="" /></a></td>
+        <td><a href="城市摄影.html" target="mainFrame" onclick="MM_nbGroup('down','group1','sheying','图片集/index图片/标题栏目/城市摄影空3.jpg',1)" onmouseover="MM_nbGroup('over','sheying','图片集/index图片/标题栏目/城市摄影空3.jpg','',1)" onmouseout="MM_nbGroup('out')"></a></td>
+        <td><a href="音乐街区.html" target="mainFrame" onclick="MM_nbGroup('down','group1','yinyue','图片集/index图片/标题栏目/音乐街区a1.jpg',1)" onmouseover="MM_nbGroup('over','yinyue','图片集/index图片/标题栏目/音乐街区a1.jpg','',1)" onmouseout="MM_nbGroup('out')"><img src="图片集/index图片/标题栏目/音乐街区a.jpg" alt="" name="yinyue" border="0" id="yinyue" onload="" /></a></td>
+        <td><a href="城市摄影.html" target="mainFrame" onClick="MM_nbGroup('down','group1','sheying','图片集/index图片/标题栏目/城市摄影a1.jpg',1)" onMouseOver="MM_nbGroup('over','sheying','图片集/index图片/标题栏目/城市摄影a1.jpg','',1)" onMouseOut="MM_nbGroup('out')"><img name="sheying" src="图片集/index图片/标题栏目/城市摄影a.jpg" border="0" alt="" onLoad="" /></a></td>
+      </tr>
+    </table></td>
+  </tr>
+</table>
+</body>
+</html>

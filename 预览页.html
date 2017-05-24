@@ -1,0 +1,50 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=gb2312" />
+<title>NightOwl</title>
+<script src="jquery-3.2.1.min.js"></script>
+<script type="text/javascript">
+ $(document).ready(function(){
+  $("#Layer1").fadeIn(1000);
+  setTimeout(function(){$("#Layer2").fadeIn()}, 2000);
+  setTimeout(function(){$("#Layer3").fadeIn()}, 2000);
+ });
+</script>
+<style type="text/css">
+<!--
+#Layer1 {
+	position:absolute;
+	left:40%;
+	top:30%;
+	width:302px;
+	height:170px;
+	z-index:1;
+	margin:0px auto;
+}
+#Layer2 {
+	position:absolute;
+	left:39%;
+	top:75%;
+	width:265px;
+	height:49px;
+	z-index:2;
+}
+#Layer3 {
+	position:absolute;
+	left:46%;
+	top:85%;
+	width:35px;
+	height:25px;
+	z-index:3;
+}
+-->
+</style>
+</head>
+
+<body>
+<div id="Layer1" style="display:none"><img src="图片集/预览页图片/images/未标题-1_03.gif" width="313" height="192" /></div>
+<div id="Layer2" style="display:none"><img src="图片集/预览页图片/images/未标题-1_07.gif" width="397" height="54" /></div>
+<div id="Layer3" style="display:none"><a href="index.html"><img src="图片集/预览页图片/images/未标题-1_11.gif" width="100" height="44" border="0" /></a></div>
+</body>
+</html>
